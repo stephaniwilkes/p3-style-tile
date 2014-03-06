@@ -1,48 +1,66 @@
 body {
   
-  background: #fff;
-  margin-left: 15px;
+  background: url("../img/bg/bg-1.png");
+  margin: 50px;
 }
 
 h1 {
   
   color: #FFCC38;
-  font-size: 1.3em;
+  font-size: 2em;
+  font-family: GloberHeavy;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #FFF;
 }
 
 h2 {
   
   color: #000000;
   font-size: .95em;
+  font-family: GloberHeavy;
+  text-shadow: 1px 1px 0px #FFF;
+  margin: 40px 0px 10px 0px;
 }
 
 h3 {
   
   color: #FFCC38;
   font-size: .95em;
+  font-family: GloberHeavy;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #FFF;
+  margin: 40px 0px 10px 0px;
 }
 
 h5 {
   
   color: #536C6C;
-  font-size: .80em;
+  font-size: .8em;
+  font-family: GloberHeavy;
+  text-shadow: 1px 1px 0px #FFF;
+  margin: 20px 0px 10px 22px;
 }
 
-p {
+p, q { /* .8em because [q] is NOT the child [p]  */
   
   color: #000000;
   font-size: .8em;
+  font-family: GloberBook;
+  text-shadow: 1px 1px 0px #FFF;
+  margin: 2.5px 0px 2.5px 22px;
 }
 
-q {
+p > q {
   
-  color: #000000;
-  font-size: .8em;
+  font-size: 1em; /* 1em == .8em because [q] is the child of [p]  */
+  margin: 2.5px 0px;
 }
 
 a {
   
   text-decoration: none;
+  font-family: GloberBook;
+  text-shadow: 1px 1px 0px #FFF;
   color: #000000;
 }
 
@@ -50,12 +68,16 @@ li {
   
   color: #000000;
   font-size: .8em;
+  font-family: GloberBook;
+  margin: 2.5px 0px;
 }
 
 
 a:hover {
   
   color: #FFCC38;
+  font-family: GloberLight;
+  text-shadow: 1px 1px 0px #FFF;
 }
 
 .color-1 {
@@ -63,6 +85,7 @@ a:hover {
   background: #FFCC38;
   width: 40px;
   height: 40px;
+  margin: 2.5px 0px 2.5px 22px;
 }
 
 .color-2 {
@@ -70,6 +93,7 @@ a:hover {
   background: #536C6C;
   width: 40px;
   height: 40px;
+  margin: 2.5px 0px 2.5px 22px;
 }
 
 .color-3 {
@@ -77,14 +101,83 @@ a:hover {
   background: #000000;
   width: 40px;
   height: 40px;
+  margin: 2.5px 0px 2.5px 22px;
+}
+
+.pattern-1 {
+
+  width: 40px;
+  height: 40px;
+  margin: 2.5px 0px 2.5px 22px;
+  border: 1px solid;
 }
 
 .banner img {
 
-	border-radius: 30%;
+  border-radius: 25%;
 }
 
-.banner h4 {
+.logo {
 
-	margin: -15px 0px 108px 0px;
+    margin: 5px 0px 0px 30px;
+    padding: 0px 0px 20px 0px;
+}
+
+nav ul {
+
+  margin: -30px -15px 0px -15px;
+  padding: 15px 0px;
+}
+
+nav li {
+
+  font-size: 1em;
+  font-family: GloberHeavy;
+  display: inline;
+  text-align: center;
+}
+
+nav a {
+
+  color: #536C6C;
+  margin: 0px 15px;
+  text-transform: lowercase;
+}
+
+.quote h2 {
+
+  text-transform: uppercase;
+}
+
+.quote q {
+
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+footer ul {
+
+  margin: 15px 0px 0px -15px;
+  padding: 15px 0px;
+}
+
+footer li {
+
+  display: inline;
+}
+
+footer h2 {
+
+  margin: -25px 0px 0px 140px;
+}
+
+footer img {
+
+  padding: 5px;
+  border-radius: 95%;
+}
+
+footer img:hover {
+
+  background: #FFCC38;
 }
